@@ -36,7 +36,7 @@ export const Footer = () => {
         
         <div className="mt-12 border-t border-gray-800 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} Vito Piccolini. Tutti i diritti riservati.
+            &copy; {currentYear} Vito <span className="text-slate-500">Piccolini</span>. Tutti i diritti riservati.
           </p>
         </div>
       </div>

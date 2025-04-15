@@ -66,7 +66,7 @@ export const AboutSection = () => {
                   <span className="text-gray-500 dark:text-gray-400">Profile Image</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent">
-                  <h3 className="text-white font-poppins font-semibold">Vito Piccolini</h3>
+                  <h3 className="text-white font-poppins font-semibold">Vito <span className="text-slate-300">Piccolini</span></h3>
                   <p className="text-primary-200">AI Developer</p>
                 </div>
               </div>

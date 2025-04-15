@@ -23,7 +23,7 @@ export const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Vito <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-green-500 to-red-500 animate-gradient">Piccolini</span>
+            Vito <span className="text-slate-600 dark:text-slate-400">Piccolini</span>
           </motion.h1>
           
           <motion.h2 
