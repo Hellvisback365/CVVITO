@@ -21,13 +21,28 @@ export const Footer = () => {
             </div>
             
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+              <a 
+                href="https://github.com/vitopiccolo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary transition-colors duration-300"
+              >
                 <Github size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+              <a 
+                href="https://linkedin.com/in/vitopiccolo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary transition-colors duration-300"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+              <a 
+                href="https://twitter.com/vitopiccolo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary transition-colors duration-300"
+              >
                 <Twitter size={20} />
               </a>
             </div>

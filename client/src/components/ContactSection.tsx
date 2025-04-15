@@ -248,19 +248,25 @@ export const ContactSection = () => {
                     <h4 className="font-medium">Sociale</h4>
                     <div className="flex space-x-4 mt-2">
                       <a
-                        href="#"
+                        href="https://github.com/vitopiccolo"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
                       >
                         <Github size={20} />
                       </a>
                       <a
-                        href="#"
+                        href="https://linkedin.com/in/vitopiccolo"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
                       >
                         <Linkedin size={20} />
                       </a>
                       <a
-                        href="#"
+                        href="https://twitter.com/vitopiccolo"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
                       >
                         <Twitter size={20} />
