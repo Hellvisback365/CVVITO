@@ -105,14 +105,14 @@ export const AboutSection = () => {
                 >
                   <FaLinkedin size={18} />
                 </a>
-                <a
+                {/*<a
                   href="https://twitter.com/VitoPiccolini"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
                   <FaTwitter size={18} />
-                </a>
+                </a>*/}
                 <a
                   href="mailto:vitopiccolini@live.it"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"

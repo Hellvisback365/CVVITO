@@ -17,7 +17,11 @@ const timelineItems: TimelineItem[] = [
     title: "Sviluppatore IA",
     company: "LACAM-SWAP, Università di Bari",
     description:
-      "Tirocinio specializzato nella prototipazione di applicazioni basate su modelli linguistici (LLaMA, Mistral) e soluzioni di raccomandazione conversazionale.",
+      "Progetto di tesi: Sistema di Raccomandazione Conversazionale Integrato con LLM          « Prototipazione in Python di modelli LLM locali (LLaMA, Mistral) tramite Hugging Face Transformers.
+      Orchestrazione multi-modello con LangChain (LLMChain, ChatOpenAl) e integrazione via OpenRouter API.
+      . Sperimentazione modelli API (llama-4, mistral) per aumentare la diversita e robustezza delle risposte.
+      . Ottimizzazione del prompt engineering e implementazione di esecuzione asincrona con caching.
+      « Risultato: riduzione stimata dei tempi di inferenza del 20-30%. ",
     tags: [
       "LLaMA",
       "Mistral",
