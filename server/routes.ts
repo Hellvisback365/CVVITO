@@ -13,6 +13,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Store contact form submission
       const result = await storage.saveContactMessage(contactData);
+
+      // Send email
+      try {
+        await sendContactEmail(contactData);
+      } catch (emailError) {
+        console.error('Error sending email:', emailError);
+        return res.status(500).json({
+          success: false,
+          message: 'Errore nell\'invio dell\'email'
+        });
+      }
       
       return res.status(200).json({ 
         success: true, 
