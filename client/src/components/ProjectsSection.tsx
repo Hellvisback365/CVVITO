@@ -101,7 +101,7 @@ export const ProjectsSection = () => {
                       <img 
                         src={project.imageUrl} 
                         alt={`${project.title} - Progetto`} 
-                        className="w-full h-full object-cover object-center"
+                        className={`w-full h-full ${project.title === "POSD System" || project.title === "AI Recommender" ? "object-contain p-4 bg-white dark:bg-gray-800" : "object-cover"} object-center`}
                       />
                     </div>
                   ) : (
