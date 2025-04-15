@@ -6,11 +6,9 @@ import {
   Brain,
   MessageSquare,
   ShieldCheck,
-  Github,
-  Linkedin,
-  Twitter,
   Mail,
 } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 // Importa l'immagine del profilo
 import ImmagineProfiloPng from "@assets/images/Immagine_Profilo.png";
@@ -95,19 +93,19 @@ export const AboutSection = () => {
                   href="#"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
-                  <Github size={18} />
+                  <FaGithub size={18} />
                 </a>
                 <a
                   href="#"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
-                  <Linkedin size={18} />
+                  <FaLinkedin size={18} />
                 </a>
                 <a
                   href="#"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
-                  <Twitter size={18} />
+                  <FaTwitter size={18} />
                 </a>
                 <a
                   href="#"

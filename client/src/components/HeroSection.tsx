@@ -27,9 +27,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             Vito{" "}
-            <span className="text-slate-600 dark:text-blue-800">
-              Piccolini
-            </span>
+            <span className="text-slate-600 dark:text-blue-800">Piccolini</span>
           </motion.h1>
 
           <motion.h2
