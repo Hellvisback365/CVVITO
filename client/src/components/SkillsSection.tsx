@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { Bot, ShieldAlert, Code, Wrench } from "lucide-react";
+import { Bot, ShieldAlert, Code, Wrench, Database, Languages } from "lucide-react";
 
 interface Skill {
   name: string;
@@ -75,7 +75,7 @@ const skillsData: SkillCategory[] = [
   },
   {
     name: "Database e Backend:",
-    icon: <Wrench className="mr-3 text-primary" />,
+    icon: <Database className="mr-3 text-primary" />,
     color: "bg-primary",
     skills: [
       { name: "MySQL", percentage: 80 },
@@ -87,7 +87,7 @@ const skillsData: SkillCategory[] = [
 
   {
     name: "Lingue:",
-    icon: <Wrench className="mr-3 text-primary" />,
+    icon: <Languages className="mr-3 text-primary" />,
     color: "bg-primary",
     skills: [
       { name: "Inglese", percentage: 40 },
