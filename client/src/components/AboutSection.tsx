@@ -74,11 +74,12 @@ export const AboutSection = () => {
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-green-500 to-red-500" />
               <div className="relative w-full h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
-                <div className="w-full h-full overflow-hidden">
+                <div className="w-full h-full overflow-hidden flex items-center justify-center bg-white dark:bg-gray-800">
                   <img
                     src={ImmagineProfiloPng}
                     alt="Vito Piccolini - Immagine del profilo"
-                    className="w-full h-full object-cover object-center"
+                    className="max-w-full max-h-full object-contain p-2"
+                    style={{ maxHeight: "90%" }}
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent">
