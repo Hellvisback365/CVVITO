@@ -144,84 +144,84 @@ export const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white dark:bg-gray-800 shadow-lg rounded-b-lg mx-4 overflow-hidden"
+            className="md:hidden bg-white dark:bg-gray-800 shadow-lg rounded-b-lg mx-4 overflow-hidden fixed z-50 left-0 right-0"
           >
             <div className="flex flex-col px-4 pt-2 pb-4 space-y-2">
-              <a 
-                href="#about" 
-                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={(e) => {
-                  e.preventDefault();
+              <button 
+                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300 text-left"
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  const element = document.querySelector('#about');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                    window.history.pushState(null, '', '#about');
-                  }
+                  setTimeout(() => {
+                    const element = document.querySelector('#about');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                      window.history.pushState(null, '', '#about');
+                    }
+                  }, 100);
                 }}
               >
                 Chi Sono
-              </a>
-              <a 
-                href="#experience" 
-                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={(e) => {
-                  e.preventDefault();
+              </button>
+              <button 
+                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300 text-left"
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  const element = document.querySelector('#experience');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                    window.history.pushState(null, '', '#experience');
-                  }
+                  setTimeout(() => {
+                    const element = document.querySelector('#experience');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                      window.history.pushState(null, '', '#experience');
+                    }
+                  }, 100);
                 }}
               >
                 Esperienze
-              </a>
-              <a 
-                href="#projects" 
-                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={(e) => {
-                  e.preventDefault();
+              </button>
+              <button 
+                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300 text-left"
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  const element = document.querySelector('#projects');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                    window.history.pushState(null, '', '#projects');
-                  }
+                  setTimeout(() => {
+                    const element = document.querySelector('#projects');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                      window.history.pushState(null, '', '#projects');
+                    }
+                  }, 100);
                 }}
               >
                 Progetti
-              </a>
-              <a 
-                href="#skills" 
-                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={(e) => {
-                  e.preventDefault();
+              </button>
+              <button 
+                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300 text-left"
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  const element = document.querySelector('#skills');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                    window.history.pushState(null, '', '#skills');
-                  }
+                  setTimeout(() => {
+                    const element = document.querySelector('#skills');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                      window.history.pushState(null, '', '#skills');
+                    }
+                  }, 100);
                 }}
               >
                 Skills
-              </a>
-              <a 
-                href="#contact" 
-                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={(e) => {
-                  e.preventDefault();
+              </button>
+              <button 
+                className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300 text-left"
+                onClick={() => {
                   setIsMobileMenuOpen(false);
-                  const element = document.querySelector('#contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                    window.history.pushState(null, '', '#contact');
-                  }
+                  setTimeout(() => {
+                    const element = document.querySelector('#contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                      window.history.pushState(null, '', '#contact');
+                    }
+                  }, 100);
                 }}
               >
                 Contatti
-              </a>
+              </button>
             </div>
           </motion.div>
         )}
