@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
-import { Bot, ShieldAlert, Code, Wrench } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import { Bot, ShieldAlert, Code, Wrench } from "lucide-react";
 
 interface Skill {
   name: string;
@@ -21,11 +21,20 @@ const skillsData: SkillCategory[] = [
     icon: <Bot className="mr-3 text-primary" />,
     color: "bg-primary",
     skills: [
-      { name: "Python", percentage: 90 },
-      { name: "LangChain", percentage: 85 },
+      { name: "Python", percentage: 80 },
+      { name: "LangChain", percentage: 80 },
       { name: "NLP", percentage: 80 },
-      { name: "LLM (LLaMA/Mistral)", percentage: 85 }
-    ]
+      { name: "LLMs", percentage: 80 },
+      { name: "Prompt Engineering", percentage: 90 },
+      { name: "Hugging Face Transformers", percentage: 80 },
+      { name: "API", percentage: 90 },
+      { name: "Prompt Tuning", percentage: 90 },
+      { name: "Caching", percentage: 80 },
+      { name: "TensorFlow", percentage: 40 },
+      { name: "Raccomandazione Conversazionale", percentage: 80 },
+      { name: "PyTorch", percentage: 80 },
+      { name: "Scikit-learn,", percentage: 40 },
+    ],
   },
   {
     name: "Sicurezza e Privacy",
@@ -33,51 +42,84 @@ const skillsData: SkillCategory[] = [
     color: "bg-green-500",
     skills: [
       { name: "GDPR Compliance", percentage: 80 },
-      { name: "Data Protection", percentage: 75 }
-    ]
+      { name: "Data Protection", percentage: 70 },
+    ],
   },
   {
-    name: "Sviluppo Web",
+    name: "Sviluppo Web / Software",
     icon: <Code className="mr-3 text-red-500" />,
     color: "bg-red-500",
     skills: [
       { name: "Node.js", percentage: 80 },
-      { name: "MongoDB", percentage: 70 },
-      { name: "React", percentage: 75 },
-      { name: "API Design", percentage: 65 }
-    ]
+      { name: "MongoDB", percentage: 80 },
+      { name: "React", percentage: 80 },
+      { name: "API ", percentage: 80 },
+      { name: "JavaScript", percentage: 80 },
+      { name: "CSS", percentage: 80 },
+      { name: "Express.js", percentage: 80 },
+      { name: "Java", percentage: 80 },
+      { name: "C#", percentage: 80 },
+      { name: "Vite", percentage: 80 },
+      { name: "HTML", percentage: 80 },
+    ],
   },
   {
     name: "Strumenti e Metodologie",
     icon: <Wrench className="mr-3 text-primary" />,
-    color: "bg-primary-400",
+    color: "bg-violet-500",
     skills: [
-      { name: "Git/GitHub", percentage: 85 },
-      { name: "Agile/Scrum", percentage: 70 }
-    ]
-  }
+      { name: "Git/GitHub", percentage: 90 },
+      { name: "Agile/Scrum", percentage: 70 },
+      { name: "Postman", percentage: 60 },
+    ],
+  },
+  {
+    name: "Database e Backend:",
+    icon: <Wrench className="mr-3 text-primary" />,
+    color: "bg-violet-500",
+    skills: [
+      { name: "MySQL", percentage: 80 },
+      { name: "MongoDB ", percentage: 80 },
+      { name: "SQL", percentage: 80 },
+      { name: "NoSQL. ", percentage: 80 },
+    ],
+  },
+
+  {
+    name: "Lingue:",
+    icon: <Wrench className="mr-3 text-primary" />,
+    color: "bg-violet-500",
+    skills: [
+      { name: "Inglese", percentage: 40 },
+      { name: "Italiano", percentage: 100 },
+    ],
+  },
 ];
 
 export const SkillsSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
   const [animateSkills, setAnimateSkills] = useState(false);
-  
+
   useEffect(() => {
     if (isInView) {
       // Delay skill bar animation slightly
       const timer = setTimeout(() => {
         setAnimateSkills(true);
       }, 300);
-      
+
       return () => clearTimeout(timer);
     }
   }, [isInView]);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-20 bg-white dark:bg-black">
+    <section
+      id="skills"
+      ref={sectionRef}
+      className="py-20 bg-white dark:bg-black"
+    >
       <div className="container max-w-7xl mx-auto px-6">
-        <motion.div 
+        <motion.div
           className="flex flex-col space-y-4 mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -87,7 +129,10 @@ export const SkillsSection = () => {
             <span className="text-primary">Competenze</span> Tecniche
           </h2>
           <div className="w-20 h-1 bg-primary rounded"></div>
-          <p className="max-w-2xl">Le mie competenze tecniche nelle aree dell'IA, sviluppo web e tecnologie correlate.</p>
+          <p className="max-w-2xl">
+            Le mie competenze tecniche nelle aree dell'IA, sviluppo web e
+            tecnologie correlate.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -111,11 +156,17 @@ export const SkillsSection = () => {
                       <span>{skill.percentage}%</span>
                     </div>
                     <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                      <motion.div 
+                      <motion.div
                         className={`h-full rounded-full ${category.color}`}
                         initial={{ width: 0 }}
-                        animate={{ width: animateSkills ? `${skill.percentage}%` : 0 }}
-                        transition={{ duration: 1.5, delay: 0.1 * skillIndex, ease: "easeOut" }}
+                        animate={{
+                          width: animateSkills ? `${skill.percentage}%` : 0,
+                        }}
+                        transition={{
+                          duration: 1.5,
+                          delay: 0.1 * skillIndex,
+                          ease: "easeOut",
+                        }}
                       />
                     </div>
                   </div>

@@ -11,7 +11,7 @@ export const Footer = () => {
             href="#home"
             className="font-poppins font-bold text-2xl text-primary mb-6 md:mb-0"
           >
-            VP<span className="text-green-500">.dev</span>
+            VP<span className="text-blue-800">.it</span>
           </a>
 
           <div className="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:items-center md:space-x-8">

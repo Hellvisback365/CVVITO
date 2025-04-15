@@ -38,7 +38,7 @@ export const HeroSection = () => {
           >
             Sviluppatore IA{" "}
             <span className="text-blue-900 dark:text-blue-800">
-              in formazione
+              emergente
             </span>
           </motion.h2>
 
@@ -48,9 +48,7 @@ export const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Specializzato in prototipazione di applicazioni basate su modelli
-            linguistici (LLaMA, Mistral) e soluzioni di raccomandazione
-            conversazionale. Appassionato di tecnologie che fanno la differenza.
+            Focalizzato su modelli linguistici e sistemi di raccomandazione. Cerco opportunità per applicare le mie competenze in Python, LangChain e NLP a progetti sfidanti. Guarda cosa so fare.
           </motion.p>
 
           <motion.div
