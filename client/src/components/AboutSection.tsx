@@ -70,7 +70,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-green-500 to-red-500" />
+              <div className="absolute top-0 left-0 w-full h-2 bg-primary" />
               <div className="relative w-full h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                 <div className="w-full h-full overflow-hidden flex items-center justify-center bg-white dark:bg-gray-800">
                   <img
