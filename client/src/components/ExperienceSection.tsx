@@ -72,9 +72,9 @@ export const ExperienceSection = () => {
             {timelineItems.map((item, index) => (
               <motion.div
                 key={index}
-                className={`relative ml-10 md:ml-0 md:w-1/2 ${
+                className={`relative ml-10 md:ml-0 md:w-1/2 text-right ${
                   index % 2 === 0
-                    ? "md:pr-12 md:text-right md:self-end"
+                    ? "md:pr-12 md:self-end"
                     : "md:pl-12 md:ml-auto"
                 }`}
                 initial={{ opacity: 0, y: 50 }}
