@@ -220,7 +220,7 @@ export const ContactSection = () => {
                   <div className="ml-4">
                     <h4 className="font-medium">Email</h4>
                     <a
-                      href="mailto:info@vitopiccolo.dev"
+                      href="mailto:vitopiccolini@live.it"
                       className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
                     >
                       vitopiccolini@live.it
@@ -248,7 +248,7 @@ export const ContactSection = () => {
                     <h4 className="font-medium">Sociale</h4>
                     <div className="flex space-x-4 mt-2">
                       <a
-                        href="https://github.com/vitopiccolo"
+                        href="https://github.com/Hellvisback365"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
@@ -256,20 +256,12 @@ export const ContactSection = () => {
                         <Github size={20} />
                       </a>
                       <a
-                        href="https://linkedin.com/in/vitopiccolo"
+                        href="https://www.linkedin.com/in/vito-p-9120028a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
                       >
                         <Linkedin size={20} />
-                      </a>
-                      <a
-                        href="https://twitter.com/vitopiccolo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300"
-                      >
-                        <Twitter size={20} />
                       </a>
                     </div>
                   </div>
