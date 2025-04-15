@@ -76,7 +76,7 @@ const skillsData: SkillCategory[] = [
   {
     name: "Database e Backend:",
     icon: <Wrench className="mr-3 text-primary" />,
-    color: "bg-violet-500",
+    color: "bg-orange-500",
     skills: [
       { name: "MySQL", percentage: 80 },
       { name: "MongoDB ", percentage: 80 },
@@ -88,7 +88,7 @@ const skillsData: SkillCategory[] = [
   {
     name: "Lingue:",
     icon: <Wrench className="mr-3 text-primary" />,
-    color: "bg-violet-500",
+    color: "bg-yellow-400",
     skills: [
       { name: "Inglese", percentage: 40 },
       { name: "Italiano", percentage: 100 },

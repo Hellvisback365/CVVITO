@@ -102,7 +102,7 @@ export const ExperienceSection = () => {
                   <h4 className="font-medium mt-1 text-gray-700 dark:text-gray-300">
                     {item.company}
                   </h4>
-                  <p className="mt-3 text-gray-600 dark:text-gray-400 whitespace-pre-line text-right">
+                  <p className="mt-3 text-gray-600 dark:text-gray-400 whitespace-pre-line text-left">
                     {item.description}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">

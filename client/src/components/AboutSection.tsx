@@ -82,7 +82,7 @@ export const AboutSection = () => {
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent">
                   <h3 className="text-white font-poppins font-semibold">
-                    Vito <span className="text-slate-300">Piccolini</span>
+                    Vito <span className="text-white-800">Piccolini</span>
                   </h3>
                   <p className="text-primary-200">AI Developer</p>
                 </div>
@@ -135,16 +135,17 @@ export const AboutSection = () => {
             <p className="leading-relaxed">
               Sviluppatore Al in formazione, con esperienza nella progettazione
               e prototipazione di applicazioni basate su modelli linguistici di
-              ultima generazione. Durante il mio tirocinio accademico ho
+              ultima generazione. <br /> Durante il mio tirocinio accademico ho
               integrato LLM locali (LLaMA, Mistral) in sistemi di
               raccomandazione conversazionale, migliorando le performance
               attraverso tecniche di caching, chaining e prompt tuning.
             </p>
             <p className="leading-relaxed">
               Solide competenze in Python, LangChain, NLP e architettura di
-              backend (Node.js, MongoDB). Cerco un’opportunita per contribuire
-              allo sviluppo di soluzioni Al orientate all’utente, sfruttando
-              l’ecosistema open-source e le potenzialità dei modelli generativi.
+              backend (Node.js, MongoDB). <br /> Cerco un’opportunità per
+              contribuire allo sviluppo di soluzioni Al orientate all’utente,
+              sfruttando l’ecosistema open-source e le potenzialità dei modelli
+              generativi.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
               <div>
