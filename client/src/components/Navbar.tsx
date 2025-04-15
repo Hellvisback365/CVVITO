@@ -41,7 +41,7 @@ export const Navbar = () => {
             }
           }}
         >
-          VP<span className="text-green-500 dark:text-green-400">.dev</span>
+          VP<span className="text-green-500 dark:text-blue-800">.it</span>
         </a>
         
         <div className="hidden md:flex items-center space-x-8">

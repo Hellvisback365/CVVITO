@@ -33,6 +33,7 @@ const projects: Project[] = [
       "MongoDB",
       "React",
       "JavaScript",
+      "CSS",
       "Express.js",
       "API",
       "UX/UI",
@@ -43,18 +44,22 @@ const projects: Project[] = [
   {
     title: "POSD System",
     description:
-      "Soluzione privacy-oriented conforme al GDPR, focalizzata sulla protezione dei dati personali e sulla trasparenza dei processi di gestione delle informazioni sensibili.",
+      "Soluzione privacy-oriented conforme al GDPR che integra privacy knowledge base, autenticazione sicura e gestione di privacy patterns in architettura MVC. Progettato con metodologie Agile/Scrum per garantire      sicurezza e feedback continuo. ",
     category: "Privacy System",
-    tags: ["Java", "GDPR", "Sicurezza"],
+    tags: [
+      "Java",
+      "GDPR",
+      "Sicurezza",
+      "Agile",
+      "Scrum",
+      "MVC",
+      "API",
+      "Ingegneria del Software",
+      "Privacy Patterns",
+      "Privacy Knowledge Base",
+      "Privacy by Design",
+    ],
     imageUrl: POSD,
-  },
-  {
-    title: "AI Recommender",
-    description:
-      "Sistema di raccomandazione conversazionale basato su modelli LLM, in grado di fornire suggerimenti personalizzati attraverso un'interfaccia di conversazione naturale.",
-    category: "AI Model",
-    tags: ["Python", "LLaMA", "LangChain"],
-    imageUrl: POSD, // Using same image temporarily
   },
 ];
 
@@ -98,9 +103,9 @@ export const ProjectsSection = () => {
                 <div className="relative h-48 overflow-hidden">
                   {project.imageUrl ? (
                     <div className="w-full h-full overflow-hidden">
-                      <img 
-                        src={project.imageUrl} 
-                        alt={`${project.title} - Progetto`} 
+                      <img
+                        src={project.imageUrl}
+                        alt={`${project.title} - Progetto`}
                         className={`w-full h-full ${project.title === "POSD System" || project.title === "AI Recommender" ? "object-contain p-4 bg-white dark:bg-gray-800" : "object-cover"} object-center`}
                       />
                     </div>
