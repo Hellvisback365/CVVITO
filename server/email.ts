@@ -1,4 +1,3 @@
-
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
@@ -18,8 +17,8 @@ export async function sendContactEmail(data: {
   message: string;
 }) {
   const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER,
+    from: process.env.SENDER_EMAIL, // Use verified sender email
+    to: process.env.RECIPIENT_EMAIL,
     replyTo: data.email,
     subject: `Nuovo messaggio da ${data.name}: ${data.subject}`,
     text: `
