@@ -90,25 +90,31 @@ export const AboutSection = () => {
 
               <div className="flex justify-center space-x-4 mt-6">
                 <a
-                  href="#"
+                  href="https://github.com/Hellvisback365"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
                   <FaGithub size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/vito-p-9120028a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
                   <FaLinkedin size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="https://twitter.com/VitoPiccolini"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
                   <FaTwitter size={18} />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:vitopiccolini@live.it"
                   className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                 >
                   <Mail size={18} />
