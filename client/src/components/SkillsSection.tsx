@@ -38,8 +38,8 @@ const skillsData: SkillCategory[] = [
   },
   {
     name: "Sicurezza e Privacy",
-    icon: <ShieldAlert className="mr-3 text-green-500" />,
-    color: "bg-green-500",
+    icon: <ShieldAlert className="mr-3 text-primary" />,
+    color: "bg-primary",
     skills: [
       { name: "GDPR Compliance", percentage: 80 },
       { name: "Data Protection", percentage: 70 },
@@ -47,8 +47,8 @@ const skillsData: SkillCategory[] = [
   },
   {
     name: "Sviluppo Web / Software",
-    icon: <Code className="mr-3 text-red-500" />,
-    color: "bg-red-500",
+    icon: <Code className="mr-3 text-primary" />,
+    color: "bg-primary",
     skills: [
       { name: "Node.js", percentage: 80 },
       { name: "MongoDB", percentage: 80 },
@@ -66,7 +66,7 @@ const skillsData: SkillCategory[] = [
   {
     name: "Strumenti e Metodologie",
     icon: <Wrench className="mr-3 text-primary" />,
-    color: "bg-violet-500",
+    color: "bg-primary",
     skills: [
       { name: "Git/GitHub", percentage: 90 },
       { name: "Agile/Scrum", percentage: 70 },
@@ -76,7 +76,7 @@ const skillsData: SkillCategory[] = [
   {
     name: "Database e Backend:",
     icon: <Wrench className="mr-3 text-primary" />,
-    color: "bg-orange-500",
+    color: "bg-primary",
     skills: [
       { name: "MySQL", percentage: 80 },
       { name: "MongoDB ", percentage: 80 },
@@ -88,7 +88,7 @@ const skillsData: SkillCategory[] = [
   {
     name: "Lingue:",
     icon: <Wrench className="mr-3 text-primary" />,
-    color: "bg-yellow-400",
+    color: "bg-primary",
     skills: [
       { name: "Inglese", percentage: 40 },
       { name: "Italiano", percentage: 100 },
