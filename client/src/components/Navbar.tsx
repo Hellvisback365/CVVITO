@@ -29,16 +29,92 @@ export const Navbar = () => {
       }`}
     >
       <nav className="flex items-center justify-between max-w-7xl mx-auto px-6">
-        <a href="#home" className="font-poppins font-bold text-2xl text-primary dark:text-primary">
+        <a 
+          href="#home" 
+          className="font-poppins font-bold text-2xl text-primary dark:text-primary"
+          onClick={(e) => {
+            e.preventDefault();
+            const element = document.querySelector('#home');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState(null, '', '#home');
+            }
+          }}
+        >
           VP<span className="text-green-500 dark:text-green-400">.dev</span>
         </a>
         
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="hover:text-primary dark:hover:text-primary transition-colors duration-300">Chi Sono</a>
-          <a href="#experience" className="hover:text-primary dark:hover:text-primary transition-colors duration-300">Esperienze</a>
-          <a href="#projects" className="hover:text-primary dark:hover:text-primary transition-colors duration-300">Progetti</a>
-          <a href="#skills" className="hover:text-primary dark:hover:text-primary transition-colors duration-300">Skills</a>
-          <a href="#contact" className="hover:text-primary dark:hover:text-primary transition-colors duration-300">Contatti</a>
+          <a 
+            href="#about" 
+            className="hover:text-primary dark:hover:text-primary transition-colors duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector('#about');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState(null, '', '#about');
+              }
+            }}
+          >
+            Chi Sono
+          </a>
+          <a 
+            href="#experience" 
+            className="hover:text-primary dark:hover:text-primary transition-colors duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector('#experience');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState(null, '', '#experience');
+              }
+            }}
+          >
+            Esperienze
+          </a>
+          <a 
+            href="#projects" 
+            className="hover:text-primary dark:hover:text-primary transition-colors duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector('#projects');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState(null, '', '#projects');
+              }
+            }}
+          >
+            Progetti
+          </a>
+          <a 
+            href="#skills" 
+            className="hover:text-primary dark:hover:text-primary transition-colors duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector('#skills');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState(null, '', '#skills');
+              }
+            }}
+          >
+            Skills
+          </a>
+          <a 
+            href="#contact" 
+            className="hover:text-primary dark:hover:text-primary transition-colors duration-300"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector('#contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState(null, '', '#contact');
+              }
+            }}
+          >
+            Contatti
+          </a>
         </div>
         
         <div className="flex items-center space-x-4">
@@ -74,35 +150,75 @@ export const Navbar = () => {
               <a 
                 href="#about" 
                 className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  const element = document.querySelector('#about');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', '#about');
+                  }
+                }}
               >
                 Chi Sono
               </a>
               <a 
                 href="#experience" 
                 className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  const element = document.querySelector('#experience');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', '#experience');
+                  }
+                }}
               >
                 Esperienze
               </a>
               <a 
                 href="#projects" 
                 className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  const element = document.querySelector('#projects');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', '#projects');
+                  }
+                }}
               >
                 Progetti
               </a>
               <a 
                 href="#skills" 
                 className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  const element = document.querySelector('#skills');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', '#skills');
+                  }
+                }}
               >
                 Skills
               </a>
               <a 
                 href="#contact" 
                 className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  const element = document.querySelector('#contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', '#contact');
+                  }
+                }}
               >
                 Contatti
               </a>
