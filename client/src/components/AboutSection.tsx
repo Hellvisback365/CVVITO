@@ -98,13 +98,15 @@ export const AboutSection = () => {
               Sviluppatore IA con passione per l'innovazione
             </h3>
             <p className="leading-relaxed">
-              Mi sono specializzato nella prototipazione di applicazioni basate su modelli linguistici 
-              come LLaMA e Mistral, con particolare attenzione alle soluzioni di raccomandazione conversazionale.
+              Sviluppatore Al in formazione, con esperienza nella progettazione e prototipazione di applicazioni basate su modelli
+              linguistici di ultima generazione. Durante il mio tirocinio accademico ho integrato LLM locali (LLaMA, Mistral) in sistemi
+              di raccomandazione conversazionale, migliorando le performance attraverso tecniche di caching, chaining e prompt
+              tuning. 
             </p>
             <p className="leading-relaxed">
-              Durante il mio tirocinio presso LACAM-SWAP (Università di Bari) ho potuto approfondire la mia 
-              conoscenza nell'ambito dell'Intelligenza Artificiale e del Natural Language Processing, 
-              applicando queste tecnologie a progetti concreti.
+              Solide competenze in Python, LangChain, NLP e architettura di backend (Node.js, MongoDB). Cerco
+              un’opportunita per contribuire allo sviluppo di soluzioni Al orientate all’utente, sfruttando l’ecosistema open-source e
+              le potenzialità dei modelli generativi. 
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
               <div>
