@@ -1,14 +1,11 @@
-import nodemailer from 'nodemailer';
 
-const transporter = nodemailer.createTransport({
-  host: "smtp-mail.outlook.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD
-  }
-});
+import * as Brevo from '@getbrevo/brevo';
+
+const defaultClient = Brevo.ApiClient.instance;
+const apiKey = defaultClient.authentications['api-key'];
+apiKey.apiKey = process.env.BREVO_API_KEY;
+
+const apiInstance = new Brevo.TransactionalEmailsApi();
 
 export async function sendContactEmail(data: {
   name: string;
@@ -16,28 +13,28 @@ export async function sendContactEmail(data: {
   subject: string;
   message: string;
 }) {
-  const mailOptions = {
-    from: process.env.SENDER_EMAIL, // Use verified sender email
-    to: process.env.RECIPIENT_EMAIL,
-    replyTo: data.email,
-    subject: `Nuovo messaggio da ${data.name}: ${data.subject}`,
-    text: `
-Nome: ${data.name}
-Email: ${data.email}
-Oggetto: ${data.subject}
+  const sendSmtpEmail = new Brevo.SendSmtpEmail();
 
-Messaggio:
-${data.message}
-    `,
-    html: `
-<h3>Nuovo messaggio dal form di contatto</h3>
-<p><strong>Nome:</strong> ${data.name}</p>
-<p><strong>Email:</strong> ${data.email}</p>
-<p><strong>Oggetto:</strong> ${data.subject}</p>
-<p><strong>Messaggio:</strong></p>
-<p>${data.message}</p>
-    `
+  sendSmtpEmail.sender = { 
+    email: data.email,
+    name: data.name 
   };
+  sendSmtpEmail.to = [{ email: process.env.RECIPIENT_EMAIL }];
+  sendSmtpEmail.replyTo = { email: data.email, name: data.name };
+  sendSmtpEmail.subject = `Nuovo messaggio da ${data.name}: ${data.subject}`;
+  sendSmtpEmail.htmlContent = `
+    <h3>Nuovo messaggio dal form di contatto</h3>
+    <p><strong>Nome:</strong> ${data.name}</p>
+    <p><strong>Email:</strong> ${data.email}</p>
+    <p><strong>Oggetto:</strong> ${data.subject}</p>
+    <p><strong>Messaggio:</strong></p>
+    <p>${data.message}</p>
+  `;
 
-  return transporter.sendMail(mailOptions);
+  try {
+    await apiInstance.sendTransacEmail(sendSmtpEmail);
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw new Error('Errore nell\'invio dell\'email');
+  }
 }
